@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Bitcoin Currency</title>
+</head>
+<body>
+<form action="{% url 'bitcoin' %}" method="POST">
+    <center>
+        <div>
+                <input type="text" name="currency" placeholder="Search">
+                <br>
+                <div>
+                    <button  type="submit" style="background-color: #4CAF50; border: none; color: white;
+                     padding: 12px 20px; text-align: center; text-decoration: none;
+                       display: inline-block;  font-size: 12px;">Submit</button>
+                </div>
+            </div>
+        {% if currency %}
+        <div>
+            <h2>currency : {{ currency }}</h2>
+        </div>
+    </center>
+</form>
+</body>
+</html>
